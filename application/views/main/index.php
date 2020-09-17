@@ -3,13 +3,13 @@
         <div class="sticky-body p-4 text-center">
             <h4><?= $notes[$i]['title'] ?></h4>
             <p><?= $notes[$i]['description'] ?></p>
+            <div class="edit_notes">
+                <a href="#" ><i class="fas fa-edit"></i></a>
+                <a href="#" data-toggle="modal" data-target="#ModalCenter"><i class="fas fa-times"></i></a>
+            </div>
             <div class="d-flex justify-content-between">
                 <div>
                     <span class="date">Date: <?= $notes[$i]['created_at'] ?></span>
-                </div>
-                <div>
-                    <a href="#" class="btn btn-primary btn-sm">Edit</a>
-                    <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#ModalCenter">Delete</button>
                 </div>
             </div>
         </div>
@@ -31,9 +31,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                    <button type="button" class="btn btn-primary"
-                            onclick="DELETE FROM sticky_notes WHERE  id = <?= $notes[$i] ?>">Delete
-                    </button>
+                    <button type="button" class="btn btn-primary">Delete</button>
                 </div>
             </div>
         </div>
