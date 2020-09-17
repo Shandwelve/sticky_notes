@@ -1,0 +1,77 @@
+body {
+    padding: 0;
+    margin: 0;
+    width: 10px;
+}
+
+.app {
+    width: 1050px;
+    height: 90vh;
+    background: #343a40;
+    margin-right: 17px;
+}
+
+aside {
+    width: 300px;
+    height: 100%;
+    background: #37404a;
+}
+
+header {
+    width: 100%;
+    height: 150px;
+    background: #343a40;
+}
+
+.logo {
+    width: 100%;
+    height: 70px;
+    background: darkgrey;
+}
+
+.add {
+    width: 100%;
+    height: 80px;
+}
+
+.content {
+    width: 750px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.sticky {
+    width: 100%;
+    height: 200px;
+    background: #44505c;
+    border: 6px double black;
+}
+
+.sticky-body {
+    color: #efffff;
+}
+
+.date {
+    font-size: 15px;
+}
+
+p {
+    height: 70px;
+    overflow: hidden;
+}
+
+.popup_add {
+    position: absolute;
+    width: 500px;
+    height: 400px;
+    display: block;
+    background: #0c5460;
+    z-index: 100;
+}
