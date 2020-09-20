@@ -11,14 +11,14 @@ class Main extends Model
     public function getNotes()
     {
         return $this->dataBase->row("
-                                SELECT
-                                        title,
-                                        description,
-                                        priority,
-                                        created_at,
-                                        updated_at
-                                FROM
-                                        notes"
+            SELECT
+                    title,
+                    description,
+                    priority,
+                    created_at,
+                    id
+            FROM
+                    notes"
         );
     }
 }

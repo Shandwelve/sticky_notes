@@ -15,8 +15,8 @@ class NoteController extends Controller
 
     public function delete(): void
     {
-        var_dump($_POST);
-        $this->view->render('Delete Note');
+        $this->model->deleteNoteById($_GET['id']);
+        $this->view->redirect('');
     }
 
     public function edit(): void
