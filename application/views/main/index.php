@@ -5,7 +5,7 @@
             <p><?= $notes[$i]['description'] ?></p>
             <div class="edit_notes">
                 <a href="#" ><i class="fas fa-edit"></i></a>
-                <a href="#" data-toggle="modal" data-target="#ModalCenter"><i class="fas fa-times"></i></a>
+                <a href="#" data-toggle="modal" data-target="#ModalCenter<?= $notes[$i]['id'] ?>"><i class="fas fa-times"></i></a>
             </div>
             <div class="d-flex justify-content-between">
                 <div>
@@ -16,7 +16,7 @@
     </div>
 
     <!-- Modal -->
-    <div class="modal fade" id="ModalCenter" tabindex="-1" role="dialog"
+    <div class="modal fade" id="ModalCenter<?= $notes[$i]['id'] ?>" tabindex="-1" role="dialog"
          aria-labelledby="ModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
@@ -31,9 +31,10 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                    <button type="button" class="btn btn-primary">Delete</button>
+                    <button type="button" class="btn btn-primary"><a href="/delete?id=<?= $notes[$i]['id'] ?>">Delete</a></button>
                 </div>
             </div>
         </div>
     </div>
 <?php endfor; ?>
+

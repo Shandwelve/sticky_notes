@@ -1,4 +1,4 @@
-$(document).ready(function () {
+/*$(document).ready(function () {
     $.ajax({
         url: 'delete?id=1',
         method: 'POST',
@@ -9,4 +9,4 @@ $(document).ready(function () {
     }).done(function (response) {
         $('body').append(response);
     });
-})
+})*/

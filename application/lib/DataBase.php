@@ -27,7 +27,7 @@ class DataBase
         return true;
     }
 
-    public function query($sql, $params = [])
+    public function query(string $sql, array $params = []): object
     {
         $statement = $this->connection->prepare($sql);
         if (!empty($params)) {
