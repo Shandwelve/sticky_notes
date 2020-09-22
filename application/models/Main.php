@@ -21,4 +21,11 @@ class Main extends Model
                     notes"
         );
     }
+
+    public function makeDate(array &$notes)
+    {
+      foreach ($notes as &$note) {
+          $note['created_at'] = 'test';
+      }
+    }
 }
