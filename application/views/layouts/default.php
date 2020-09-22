@@ -29,8 +29,9 @@
 
     <aside class="border-right border-secondary">
         <header class="border-bottom border-secondary text-center">
-            <a href="#"><div class="logo"></div></a>
-            <div class="add d-flex justify-content-center align-items-center"><button type="button" class="btn btn-primary btn-sm pl-5 pr-5">Add note</button></div>
+            <a href="/"><div class="logo"></div></a>
+            <a style="text-decoration: none; color: white" href="/add"><div class="add d-flex justify-content-center align-items-center"><button type="button" class="btn btn-primary btn-sm pl-5 pr-5">
+                        Add note</button></div></a>
         </header>
 
         <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
@@ -41,15 +42,8 @@
         </div>
     </aside>
 
-    <div class="content m-3">
+    <?= $content ?>
 
-        <?= $content ?>
-
-    </div>
-</div>
-
-<div class="popup_add">
-    <div class="popup_add_conteiner"></div>
 </div>
 
 </body>
