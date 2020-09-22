@@ -21,11 +21,4 @@ class Main extends Model
                     notes"
         );
     }
-
-    /*public function addNote() {
-        return $this->dataBase->query(" 
-            INSERT INTO notes (title, description, priority)
-            VALUES ();
-        ")
-    }*/
 }
