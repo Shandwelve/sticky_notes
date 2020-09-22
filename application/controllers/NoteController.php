@@ -22,6 +22,5 @@ class NoteController extends Controller
     public function edit(): void
     {
         $this->view->render('Edit Note');
-
     }
 }

@@ -1,3 +1,4 @@
+<div class="content m-3">
 <?php for ($i = 0; $i < count($notes); $i++): ?>
     <div class="sticky shadow">
         <div class="sticky-body p-4 text-center">
@@ -7,7 +8,7 @@
                 <a href="#" ><i class="fas fa-edit"></i></a>
                 <a href="#" data-toggle="modal" data-target="#ModalCenter<?= $notes[$i]['id'] ?>"><i class="fas fa-times"></i></a>
             </div>
-            <div class="d-flex justify-content-between">
+            <div class="d-flex justify-content-end">
                 <div>
                     <span class="date">Date: <?= $notes[$i]['created_at'] ?></span>
                 </div>
@@ -31,10 +32,11 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                    <button type="button" class="btn btn-primary"><a href="/delete?id=<?= $notes[$i]['id'] ?>">Delete</a></button>
+                    <a style="text-decoration: none; color: white" href="/delete?id=<?= $notes[$i]['id'] ?>"><button type="button" class="btn btn-primary">Delete</button></a>
                 </div>
             </div>
         </div>
     </div>
 <?php endfor; ?>
+</div>
 
