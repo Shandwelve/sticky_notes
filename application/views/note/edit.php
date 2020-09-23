@@ -36,7 +36,7 @@
                                 <label for="add_content" class="control-label text-primary">Content</label>
                                 <div>
                                     <div class="input-group">
-                                    <textarea name="description" id="add_content" cols="95" rows="11"
+                                    <textarea style="width: 1065px" name="description" id="add_content" cols="" rows="15"
                                               class="form-control" required><?= $data['description'] ?></textarea>
                                     </div>
                                 </div>

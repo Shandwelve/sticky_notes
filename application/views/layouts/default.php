@@ -24,7 +24,7 @@
     <title><?= $title ?></title>
 </head>
 
-<body class="container d-flex " style="background: #3e4853">
+<body class="container d-flex justify-content-center" style="background: #3e4853">
 <div class="app shadow mt-4 mb-4 rounded d-inline-flex">
 
     <aside class="border-right border-secondary">
