@@ -3,7 +3,7 @@
         <div class="row justify-content-center">
             <div>
                 <div class="card bg-dark">
-                    <div class="card-header"> </div>
+                    <div class="card-header"></div>
                     <div class="card-body">
 
                         <form class="form-horizontal" method="post" action="/add" enctype="multipart/form-data">
@@ -13,18 +13,18 @@
                                 <div class="cols-sm-10">
                                     <div class="input-group">
                                         <input required type="text" class="form-control" name="title"
-                                                id="name"
+                                               id="name"
                                                placeholder="Enter title"/>
                                     </div>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label for="priority" class="cols-sm-2 control-label text-primary">Priority</label>
-                            <select id="priority" name="priority" class="custom-select custom-select-lg mb-3">
-                                <option selected value="low">Low</option>
-                                <option value="medium">Medium</option>
-                                <option value="high">High</option>
-                            </select>
+                                <select id="priority" name="priority" class="custom-select custom-select-lg mb-3">
+                                    <option selected value="low">Low</option>
+                                    <option value="medium">Medium</option>
+                                    <option value="high">High</option>
+                                </select>
                             </div>
                             <div class="form-group">
                                 <label for="add_content" class="control-label text-primary">Content</label>

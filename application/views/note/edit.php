@@ -3,16 +3,18 @@
         <div class="row justify-content-center">
             <div>
                 <div class="card bg-dark">
-                    <div class="card-header"> </div>
+                    <div class="card-header"></div>
                     <div class="card-body">
 
-                        <form class="form-horizontal" method="post" action="/edit?id=<?= $_GET['id'] ?>" enctype="multipart/form-data">
+                        <form class="form-horizontal" method="post" action="/edit?id=<?= $_GET['id'] ?>"
+                              enctype="multipart/form-data">
 
                             <div class="form-group">
                                 <label for="name" class="cols-sm-2 control-label text-primary">Title</label>
                                 <div class="cols-sm-10">
                                     <div class="input-group">
-                                        <input value="<?= $data['title'] ?>" required type="text" class="form-control" name="title"
+                                        <input value="<?= $data['title'] ?>" required type="text" class="form-control"
+                                               name="title"
                                                id="name"
                                                placeholder="Enter title"/>
                                     </div>
@@ -21,9 +23,13 @@
                             <div class="form-group">
                                 <label for="priority" class="cols-sm-2 control-label text-primary">Priority</label>
                                 <select id="priority" name="priority" class="custom-select custom-select-lg mb-3">
-                                    <option <?= $data['priority'] === 'low'? 'selected' : ''?> value="low">Low</option>
-                                    <option  <?= $data['priority'] === 'medium'? 'selected' : ''?> value="medium">Medium</option>
-                                    <option  <?= $data['priority'] === 'high'? 'selected' : ''?> value="high">High</option>
+                                    <option <?= $data['priority'] === 'low' ? 'selected' : '' ?> value="low">Low
+                                    </option>
+                                    <option <?= $data['priority'] === 'medium' ? 'selected' : '' ?> value="medium">
+                                        Medium
+                                    </option>
+                                    <option <?= $data['priority'] === 'high' ? 'selected' : '' ?> value="high">High
+                                    </option>
                                 </select>
                             </div>
                             <div class="form-group">
@@ -36,7 +42,8 @@
                                 </div>
                             </div>
                             <div class="form-group ">
-                                <button type="submit" class="btn btn-primary btn-lg btn-block login-button">Edit</button>
+                                <button type="submit" class="btn btn-primary btn-lg btn-block login-button">Edit
+                                </button>
                             </div>
                         </form>
                     </div>

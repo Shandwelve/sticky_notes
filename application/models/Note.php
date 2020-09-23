@@ -36,8 +36,8 @@ class Note extends Model
                 VALUES
                     (:title, :priority, :description)",
                 [
-                    'title' => $data['title'],
-                    'priority' => $data['priority'],
+                    'title'       => $data['title'],
+                    'priority'    => $data['priority'],
                     'description' => $data['description']
                 ]
             );
@@ -77,10 +77,10 @@ class Note extends Model
             WHERE 
                 id = :id",
                 [
-                    "title" => $data['title'],
-                    "priority" => $data['priority'],
+                    "title"       => $data['title'],
+                    "priority"    => $data['priority'],
                     "description" => $data['description'],
-                    "id" => $id
+                    "id"          => $id
                 ]
             );
         }
