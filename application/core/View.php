@@ -27,6 +27,14 @@ class View
         }
     }
 
+    public function getComponent(array $vars = []) {
+        extract($vars);
+        $path = "application/views/$this->path.php";
+        if (file_exists($path)) {
+            require_once $path;
+        }
+    }
+
     static public function errorCode(int $value): void
     {
         http_response_code($value);

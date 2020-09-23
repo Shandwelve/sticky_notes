@@ -16,5 +16,9 @@ return [
     'delete\?id=\d+' => [
         'controller' => 'note',
         'action'     => 'delete'
+    ],
+    'filterNotes'    => [
+        'controller' => 'main',
+        'action'     => 'filter'
     ]
 ];

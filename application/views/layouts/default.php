@@ -29,16 +29,27 @@
 
     <aside class="border-right border-secondary">
         <header class="border-bottom border-secondary text-center">
-            <a href="/"><div class="logo"></div></a>
-            <a style="text-decoration: none; color: white" href="/add"><div class="add d-flex justify-content-center align-items-center"><button type="button" class="btn btn-primary btn-sm pl-5 pr-5">
-                        Add note</button></div></a>
+            <a href="/">
+                <div class="logo"></div>
+            </a>
+            <a style="text-decoration: none; color: white" href="/add">
+                <div class="add d-flex justify-content-center align-items-center">
+                    <button type="button" class="btn btn-primary btn-sm pl-5 pr-5">
+                        Add note
+                    </button>
+                </div>
+            </a>
         </header>
 
         <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-            <a class="nav-link active text-center" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">All</a>
-            <a class="nav-link text-center" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">High</a>
-            <a class="nav-link text-center" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Medium</a>
-            <a class="nav-link text-center" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Low</a>
+            <a class="nav-link active text-center" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home"
+               role="tab" aria-controls="v-pills-home" aria-selected="true">All</a>
+            <a class="nav-link text-center" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile"
+               role="tab" aria-controls="v-pills-profile" aria-selected="false">High</a>
+            <a class="nav-link text-center" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages"
+               role="tab" aria-controls="v-pills-messages" aria-selected="false">Medium</a>
+            <a class="nav-link text-center" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings"
+               role="tab" aria-controls="v-pills-settings" aria-selected="false">Low</a>
         </div>
     </aside>
 

@@ -10,3 +10,18 @@
         $('body').append(response);
     });
 })*/
+
+$(document).on('click', '.nav-link', function () {
+    console.log($(this).html())
+    $.ajax({
+        url: 'filterNotes',
+        method: 'POST',
+        data: {
+            priority: $(this).html()
+        }
+    }).done(function (result) {
+        console.log(result)
+        $('.content').remove();
+        $('aside').after(result);
+    })
+})
