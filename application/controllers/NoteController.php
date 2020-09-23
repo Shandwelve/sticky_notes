@@ -10,6 +10,10 @@ class NoteController extends Controller
 {
     public function add(): void
     {
+        if (!empty($_POST)) {
+            $this->model->addNote($_POST);
+            $this->view->redirect('');
+        }
         $this->view->render('Add Note');
     }
 
@@ -21,6 +25,11 @@ class NoteController extends Controller
 
     public function edit(): void
     {
-        $this->view->render('Edit Note');
+        if (!empty($_POST)) {
+            $this->model->updateNote($_GET['id'], $_POST);
+            $this->view->redirect('');
+        }
+        $data = $this->model->getNoteById($_GET['id']);
+        $this->view->render('Edit Note', ["data" => $data[0]]);
     }
 }

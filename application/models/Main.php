@@ -8,7 +8,7 @@ use application\core\Model;
 
 class Main extends Model
 {
-    public function getNotes()
+    public function getNotes(): array
     {
         return $this->dataBase->row("
             SELECT
@@ -22,10 +22,23 @@ class Main extends Model
         );
     }
 
-    public function makeDate(array &$notes)
+    public function filter(string $priority): array
     {
-      foreach ($notes as &$note) {
-          $note['created_at'] = 'test';
-      }
+        if ($priority !== 'All') {
+            return $this->dataBase->row("
+                SELECT
+                        title,
+                        description,
+                        priority,
+                        created_at,
+                        id
+                FROM
+                        notes
+                WHERE
+                    priority = :priority",
+                ['priority' => $priority]
+            );
+        }
+        return $this->getNotes();
     }
 }

@@ -14,4 +14,10 @@ class MainController extends Controller
         $this->model->makeDate($notes);
         $this->view->render('Main Page', ['notes' => $notes]);
     }
+
+    public function filter(): void
+    {
+        $notes = $this->model->filter($_POST['priority']);
+        $this->view->getComponent(['notes' => $notes]);
+    }
 }
