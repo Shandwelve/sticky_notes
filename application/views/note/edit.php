@@ -1,9 +1,9 @@
-<main id="main_add d-flex align-items-center justify-content-center">
+<main id="main_add d-flex" class="content justify-content-center">
     <div class="container add">
         <div class="row justify-content-center">
             <div>
                 <div class="card bg-dark">
-                    <div class="card-header"></div>
+
                     <div class="card-body">
 
                         <form class="form-horizontal" method="post" action="/edit?id=<?= $_GET['id'] ?>"
@@ -36,7 +36,7 @@
                                 <label for="add_content" class="control-label text-primary">Content</label>
                                 <div>
                                     <div class="input-group">
-                                    <textarea style="width: 1065px" name="description" id="add_content" cols="" rows="15"
+                                    <textarea style="width: 1065px" name="description" id="add_content" cols="" rows="11"
                                               class="form-control" required><?= $data['description'] ?></textarea>
                                     </div>
                                 </div>
